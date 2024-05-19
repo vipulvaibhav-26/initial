@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#1").click(function(){
+            $("ul").append("<li>biscuit</li>");
+        });
+
+        $("#1").click(3000,function(){
+            $("ul").append("<li>tea</li>");
+        })
+        $("#2").click(function(){
+$("ul").remove();
+    });
+});
+</script>
+<style>
+ul{
+    border: 5px solid red;
+    background-color: blue;
+    padding: 5px 6px;
+}
+</style>
+</head>
+<body>
+    <p1>hey buddy !</p1>
+    <p1>please order certain food items.</p1>
+    <ul>
+        <li>burger</li>
+        <li>pizza</li>
+        <li>coconut</li>
+    </ul>
+    <button id="1">click to add items</button1>
+    <button id="2">click to remove menu</button2>
+</body>
+</html>
